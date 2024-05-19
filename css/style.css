@@ -321,86 +321,68 @@ body {
     /* Add shadow to the card */
 }
 
-/* Contact */
-.contact {
-    padding: 8rem 7% 1.4rem;
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    margin-top: 150px;
+}
+
+.footer-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-size: cover;
-}
-
-.contact h2 {
-    font-size: 36px;
-    font-weight: 700;
-    color: #fff;
-}
-
-.contact p {
-    font-weight: 500;
-    color: #fff;
-}
-
-.contact .container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contact .container .contactInfo {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    width: 100%;
-}
-
-.contact .container .contactInfo .box {
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
-    display: flex;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
 }
 
-.contact .container .contactInfo .box .icon {
-    min-width: 60px;
-    height: 60px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    font-size: 22px;
-    margin-right: 15px;
+.footer-container div {
+    flex: 1;
+    margin: 10px;
 }
 
-.contact .container .contactInfo .box .text {
-    font-size: 16px;
-    color: #fff;
-    flex-direction: column;
-    font-weight: 400;
+.footer-about,
+.footer-links,
+.footer-social {
+    padding: 10px;
 }
 
-.contact .container .contactInfo .box .text h3 {
-    font-weight: 500;
-    color: #fff;
+.footer-about p,
+.footer-links ul,
+.footer-social a {
+    margin: 10px 0;
 }
 
-.contact .contactform {
-    width: 100%;
-    max-width: 500px;
-    padding: 40px;
-    background: #fff;
-    border-radius: 8px;
-    margin-top: 2rem;
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.contact .contactform h2 {
-    font-size: 30px;
-    color: #333;
-    font-weight: 500;
+.footer-links li {
+    margin: 5px 0;
+}
+
+.footer-links a,
+.footer-social a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+    color: #ff6347;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #222;
+}
+
+.footer-bottom p {
+    margin: 0;
 }
 
 /* Media Queries */
