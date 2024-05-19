@@ -96,12 +96,13 @@ body {
     transition: 0.4s;
 }
 
+/* Content*/
+
 .bg {
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* Centers the content horizontally */
     background-image: url("/image/img (3).jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -109,7 +110,6 @@ body {
     position: relative;
     height: 100vh;
     text-align: center;
-    /* Centers the text inside the content */
 }
 
 .bg::after {
@@ -125,9 +125,7 @@ body {
     padding: 25rem 7% 2rem;
     max-width: 60rem;
     position: relative;
-    /* Ensures z-index works */
     z-index: 1;
-    /* Puts content above the gradient overlay */
 }
 
 .bg .content h1 {
@@ -179,6 +177,8 @@ body {
     }
 }
 
+/* Content*/
+
 /* About Section */
 .about {
     padding: 7rem 7% 1.4rem;
@@ -219,6 +219,7 @@ body {
     line-height: 1.5rem;
     text-align: justify;
 }
+/* About Section */
 
 /* skills */
 .skills {
@@ -259,6 +260,7 @@ body {
     height: auto;
     margin-right: 15px;
 }
+/* skills */
 
 /* Portofolio */
 .portofolio {
@@ -316,11 +318,11 @@ body {
 /* Hover effect */
 .portofolio .card:hover {
     transform: scale(1.05);
-    /* Slightly enlarge the card */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Add shadow to the card */
 }
+/* Portofolio */
 
+/* Footer */
 footer {
     background-color: #333;
     color: white;
