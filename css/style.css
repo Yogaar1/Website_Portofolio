@@ -79,7 +79,7 @@ body {
 }
 
 #menu {
-    display: none;
+display: none;
 }
 
 .navbar-toggle {
@@ -280,7 +280,7 @@ body {
 
 /* Portofolio styles */
 .portofolio {
-    padding: 2rem 7%;
+    padding: 2rem 7% 100px;
 }
 
 .portofolio p {
@@ -374,70 +374,94 @@ body {
     display: block;
 }
 
-/* Footer styles */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    margin-top: 150px;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.footer-container div {
-    flex: 1;
-    margin: 10px;
-}
-
-.footer-about,
-.footer-links,
-.footer-social {
-    padding: 10px;
-}
-
-.footer-about p,
-.footer-links ul,
-.footer-social a {
-    margin: 10px 0;
-}
-
-.footer-links ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.footer-links li {
-    margin: 5px 0;
-}
-
-.footer-links a,
-.footer-social a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.footer-links a:hover,
-.footer-social a:hover {
-    color: #ff6347;
-}
-
-.footer-bottom {
+/* Certificate */
+/* .certificate {
     text-align: center;
-    padding: 10px 0;
-    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 50px;
 }
 
-.footer-bottom p {
-    margin: 0;
-    color: #ffa500;
+.certificate h2 {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    color: #E17900;
+}
+
+.certificates {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.cert-img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.cert-img:hover {
+    transform: scale(1.05);
+} */
+
+/* Footer styles */
+.footer {
+    display: flex;
+    height: 15rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 150px;
+    background-color: #181818;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile h2 {
+    color: #fff;
+}
+
+.profile p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+    margin-top: 20px;
+}
+
+.contact {
+    text-align: left;
+    color: #fff;
+}
+
+.contact a {
+    color: #E17900;
+    text-decoration: none;
+}
+.copyright {
+    color: #fff;
 }
 
 /* Media Queries */
@@ -449,8 +473,8 @@ footer {
     .navbar .navbar-nav {
         display: none;
         flex-direction: column;
-        align-items: center;
-        background-color: rgba(1, 1, 1, 0.9);
+        align-items: left;
+        background-color: rgba(1, 1, 1, 0.8);
         position: absolute;
         top: 100%;
         left: 0;
