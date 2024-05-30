@@ -79,7 +79,7 @@ body {
 }
 
 #menu {
-display: none;
+    display: none;
 }
 
 .navbar-toggle {
@@ -298,7 +298,7 @@ display: none;
 
 .portofolio .container {
     display: grid;
-    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
 
@@ -334,7 +334,7 @@ display: none;
 
 /* Hover effect */
 .portofolio .card:hover {
-    transform: scale(1.15);
+    transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -411,56 +411,75 @@ display: none;
 /* Footer styles */
 .footer {
     display: flex;
-    height: 15rem;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 150px;
+    padding: 2rem;
     background-color: #181818;
+    color: #fff;
 }
 
-.profile {
+.footer .footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.footer .profile {
     display: flex;
     align-items: center;
+    margin-bottom: 1rem;
 }
 
-.profile h2 {
-    color: #fff;
-}
-
-.profile p {
-    margin-top: 10px;
-    font-size: 16px;
-    color: #fff;
-}
-
-.profile img {
+.footer .profile img {
     border-radius: 50%;
     width: 80px;
     height: 80px;
     margin-right: 20px;
 }
 
-.social-icons a {
+.footer .profile h2,
+.footer .profile p {
+    margin: 0;
+}
+
+.footer .social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.footer .social-icons a {
     margin-right: 10px;
     text-decoration: none;
 }
 
-.social-icons a img {
+.footer .social-icons a img {
     width: 24px;
     height: 24px;
-    margin-top: 20px;
 }
 
-.contact {
+.footer .contact {
     text-align: left;
-    color: #fff;
 }
 
-.contact a {
+.footer .contact a {
     color: #E17900;
     text-decoration: none;
 }
-.copyright {
+
+.footer .contact a,
+.footer .contact p {
+    margin: 0 0 0.5rem;
+}
+
+.footer .contact a:hover {
+    text-decoration: underline;
+}
+
+.footer .copyright {
+    text-align: center;
+    margin-top: 2rem;
     color: #fff;
 }
 
@@ -515,5 +534,22 @@ display: none;
 
     .contact .contactform {
         width: 90%;
+    }
+    .footer .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .profile img {
+        margin-bottom: 1rem;
+    }
+
+    .footer .social-icons {
+        margin-top: 1rem;
     }
 }
